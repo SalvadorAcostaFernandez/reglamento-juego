@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reglamento Oficial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABECERA CON LOGO -->
+  <header class="hero-header">
+    <div class="logo-wrapper">
+      <img src="LOGO.png" alt="Logo del Juego" class="hero-logo">
+    </div>
+    <h1>REGLAMENTO DE JUEGO</h1>
+  </header>
+
+  <div class="main-wrapper">
+
+    <!-- ÍNDICE DE NAVEGACIÓN CON COLORES PASTEL EXACTOS -->
+    <aside class="table-of-contents">
+      <h2>ACCESO RÁPIDO</h2>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#sec-1" class="nav-btn nav-1">Componentes</a></li>
+          <li><a href="#sec-2" class="nav-btn nav-2">Objetivo</a></li>
+          <li><a href="#sec-3" class="nav-btn nav-3">Dinámica de Turno</a></li>
+          <li><a href="#sec-4" class="nav-btn nav-4">Tipos de Casillas</a></li>
+          <li><a href="#sec-5" class="nav-btn nav-5">Edificación</a></li>
+          <li><a href="#sec-6" class="nav-btn nav-6">Hipotecas</a></li>
+          <li><a href="#sec-7" class="nav-btn nav-7">La Cárcel</a></li>
+          <li><a href="#sec-8" class="nav-btn nav-8">Comercio</a></li>
+          <li><a href="#sec-9" class="nav-btn nav-9">Bancarrota</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- REGLAMENTO -->
+    <main class="rulebook-flow">
+
+      <!-- 1. COMPONENTES -->
+      <section id="sec-1" class="rule-section sec-1">
+        <div class="section-header">
+          <span class="section-num">01</span>
+          <h2>Componentes e Inicio</h2>
+        </div>
+
+        <h3>1.1. Componentes</h3>
+        <ul>
+          <li><strong>1 Tablero:</strong> Cuadrado de 50x50 cm con 48 casillas (4 esquinas y 44 intermedias, 11 por lateral).</li>
+          <li><strong>2 Dados convencionales:</strong> De 6 caras, numerados del 1 al 6.</li>
+          <li><strong>7 Peones:</strong> Representación de cada jugador sobre el tablero.</li>
+          <li><strong>36 Casas y 14 Hoteles:</strong> Fichas de edificación físicas limitadas.</li>
+          <li><strong>32 Títulos de Posesión:</strong>
+            <ul>
+              <li>26 Títulos de Propiedad (distribuidos en 10 grupos de color).</li>
+              <li>4 Títulos de Estaciones de Transporte.</li>
+              <li>2 Títulos de Servicios Públicos.</li>
+            </ul>
+          </li>
+          <li><strong>2 Mazos de Cartas (16 cartas cada uno):</strong> Mazo de la Suerte y Mazo de la Generosidad.</li>
+          <li><strong>Banco de Billetes:</strong> Moneda oficial del juego en denominaciones de $1, $5, $10, $20, $50, $100 y $500, con 35 unidades por cada valor.</li>
+        </ul>
+
+        <h3>1.2. Preparación de la Partida</h3>
+        <ol>
+          <li><strong>El Banco:</strong> Se designa a un jugador como Banquero. Custodia el dinero no asignado, títulos no comprados, casas y hoteles. El dinero del Banco es ilimitado; si se agotan los billetes físicos, el Banquero puede emitir pagarés contables.</li>
+          <li><strong>Capital Inicial:</strong> Cada jugador recibe <strong>$1.500</strong> al comenzar:
+            <ul>
+              <li>2 billetes de $500 ($1.000)</li>
+              <li>2 billetes de $100 ($200)</li>
+              <li>2 billetes de $50 ($100)</li>
+              <li>6 billetes de $20 ($120)</li>
+              <li>5 billetes de $10 ($50)</li>
+              <li>5 billetes de $5 ($25)</li>
+              <li>5 billetes de $1 ($5)</li>
+            </ul>
+          </li>
+          <li><strong>Ubicación de Mazos:</strong> Se barajan por separado los mazos de Suerte y Generosidad en sus áreas designadas boca abajo.</li>
+          <li><strong>Orden de Turnos:</strong> Todos tiran ambos dados. Inicia el jugador con la suma más alta y se continúa en sentido horario. Todos los peones parten desde la Salida.</li>
+        </ol>
+      </section>
+
+      <!-- 2. OBJETIVO -->
+      <section id="sec-2" class="rule-section sec-2">
+        <div class="section-header">
+          <span class="section-num">02</span>
+          <h2>Objetivo del Juego y Victoria</h2>
+        </div>
+        <p>Acumular riqueza, adquirir propiedades y llevar a la bancarrota a los contrincantes mediante el cobro de alquileres.</p>
+        <div class="highlight-pill-box">
+          <strong>Condición de Victoria:</strong> El último jugador que quede con dinero y propiedades en pie sobre la mesa, tras la eliminación por bancarrota de todos los demás participantes, es el ganador.
+        </div>
+      </section>
+
+      <!-- 3. TURNO -->
+      <section id="sec-3" class="rule-section sec-3">
+        <div class="section-header">
+          <span class="section-num">03</span>
+          <h2>Dinámica del Juego</h2>
+        </div>
+        <p>En su turno, cada jugador ejecuta secuencialmente los siguientes pasos:</p>
+        <ol>
+          <li>Inicio de Turno.</li>
+          <li>Tirar 2 Dados (si es el 3.er doble consecutivo, va a la Cárcel y termina el turno).</li>
+          <li>Mover el peón en sentido horario.</li>
+          <li>Paso por Salida: Si pasa o cae sobre ella, cobra $200.</li>
+          <li>Ejecutar la acción de la casilla de destino.</li>
+          <li>Acciones opcionales: Edificar casas/hoteles, comerciar o hipotecar/deshipotecar.</li>
+          <li>Comprobación de dobles: Si sacó dobles y no fue a prisión, vuelve al paso 2. De lo contrario, cede el turno a la derecha.</li>
+        </ol>
+
+        <div class="highlight-pill-box">
+          <strong>Regla de Dobles:</strong>
+          <ul>
+            <li>Al sacar el mismo número en ambos dados, juega su turno con normalidad y obtiene un turno extra inmediato.</li>
+            <li><strong>Límite de Dobles:</strong> Si saca dobles por tercera vez consecutiva en un mismo turno, no mueve su peón por ese tercer resultado: va inmediatamente a la Cárcel y su turno finaliza.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 4. CASILLAS -->
+      <section id="sec-4" class="rule-section sec-4">
+        <div class="section-header">
+          <span class="section-num">04</span>
+          <h2>Tipos de Casillas y Reglas</h2>
+        </div>
+
+        <h3>4.1. Casilla de Salida</h3>
+        <p>Cada vez que un peón pasa por encima o cae exactamente sobre la casilla de Salida, el Banco le abona un salario de <strong>$200</strong>. Aplica también a movimientos obligados por cartas de evento salvo indicación explícita en contra.</p>
+
+        <h3>4.2. Propiedades Inmobiliarias (26 Casillas)</h3>
+        <p><strong>Si no pertenece a nadie:</strong> Se puede comprar por el valor impreso.</p>
+        <p><strong>Si pertenece a otro jugador:</strong> Se abona el alquiler fijado en la tarjeta de propiedad según su nivel actual de edificación.</p>
+        <ul>
+          <li><strong>Sin bonificación por set completo:</strong> Poseer todas las propiedades de un mismo color no duplica el alquiler base sin edificar. El alquiler sin casas es siempre el 10% del costo de compra.</li>
+          <li><strong>Propiedad Hipotecada:</strong> No se cobra ningún alquiler.</li>
+          <li><strong>Reclamo del Alquiler:</strong> El dueño debe exigir el pago antes de que el siguiente jugador tire los dados; si no lo reclama a tiempo, la deuda expira.</li>
+        </ul>
+
+        <h3>4.3. Estaciones de Transporte (4 Casillas)</h3>
+        <p>Costo de compra: <strong>$200</strong> cada una (Colectivo, Uber, Auto, Avión).</p>
+        <ul>
+          <li>1 Estación en posesión: <strong>$25</strong></li>
+          <li>2 Estaciones en posesión: <strong>$50</strong></li>
+          <li>3 Estaciones en posesión: <strong>$100</strong></li>
+          <li>4 Estaciones en posesión: <strong>$200</strong></li>
+        </ul>
+
+        <h3>4.4. Servicios Públicos (2 Casillas: Wi-Fi y Spotify)</h3>
+        <p>Costo de compra: <strong>$150</strong> cada uno.</p>
+        <ul>
+          <li><strong>1 Servicio en posesión:</strong> 50 veces el valor marcado por los dados de llegada.</li>
+          <li><strong>Ambos Servicios en posesión:</strong> 100 veces el valor marcado por los dados de llegada.</li>
+          <li><em>Nota de cartas:</em> Si una carta traslada al jugador a un servicio, lanza ambos dados exclusivamente para determinar el multiplicador a pagar.</li>
+        </ul>
+
+        <h3>4.5. Casillas de Impuestos (6 Casillas)</h3>
+        <ul>
+          <li><strong>Impuestos Bajos ($50):</strong> Café, Fernet, Cookie Red Velvet.</li>
+          <li><strong>Impuestos Altos ($100):</strong> Viaje a Buenos Aires, Paseo por Zara, Show de Cata.</li>
+        </ul>
+
+        <h3>4.6. Mazos: Suerte y Generosidad</h3>
+        <p>Se roba la carta superior, se lee en voz alta y se aplica el efecto de inmediato. Salvo la carta de escape de prisión (que se conserva), todas vuelven al fondo del mazo.</p>
+
+        <h3>4.7. Estacionamiento Gratuito</h3>
+        <p>Casilla de descanso neutral y segura. No se acumula dinero por multas ni se cobran peajes.</p>
+
+        <h3>4.8. Ir a la Cárcel</h3>
+        <p>El peón se traslada directamente a prisión sin cobrar los $200 de Salida. El turno finaliza inmediatamente.</p>
+      </section>
+
+      <!-- 5. EDIFICACIÓN -->
+      <section id="sec-5" class="rule-section sec-5">
+        <div class="section-header">
+          <span class="section-num">05</span>
+          <h2>Sistema de Edificación (Casas y Hoteles)</h2>
+        </div>
+
+        <h3>5.1. Condiciones para Construir</h3>
+        <ul>
+          <li><strong>Monopolio Obligatorio:</strong> Se debe poseer la totalidad de las propiedades del mismo grupo de color.</li>
+          <li><strong>Sin Hipotecas en el Grupo:</strong> No se puede edificar si al menos una propiedad de ese color está hipotecada.</li>
+          <li><strong>Momento de Construcción:</strong> En cualquier instante del turno propio.</li>
+        </ul>
+
+        <h3>5.2. Regla de Construcción Uniforme</h3>
+        <p>Las casas deben distribuirse uniformemente: no se puede edificar una segunda casa hasta que todas las propiedades del grupo tengan al menos una, y así hasta un máximo de 4 casas por propiedad.</p>
+        <p><strong>Hotel:</strong> Al tener 4 casas, se devuelven al Banco y se coloca el Hotel (máximo 1 hotel por propiedad).</p>
+        
+        <div class="highlight-pill-box">
+          <strong>Costo unitario por Casa u Hotel:</strong>
+          <ul>
+            <li>Grupos 1 y 2: <strong>$50</strong> cada pieza.</li>
+            <li>Grupos 3, 4 y 5: <strong>$100</strong> cada pieza.</li>
+            <li>Grupos 6 y 7: <strong>$150</strong> cada pieza.</li>
+            <li>Grupos 8, 9 y 10: <strong>$200</strong> cada pieza.</li>
+          </ul>
+        </div>
+
+        <h3>5.3. Escasez Inmobiliaria</h3>
+        <p>El stock límite es de <strong>36 casas y 14 hoteles</strong>. Si se acaban, no se puede construir hasta que se liberen piezas físicas. Si varios jugadores compiten por las últimas casas u hoteles, el Banquero las subasta individualmente al mejor postor.</p>
+
+        <h3>5.4. Venta y Demolición</h3>
+        <p>Los edificios se venden solo al Banco por el <strong>50% de su valor original</strong>, respetando la regla uniforme de demolición.</p>
+      </section>
+
+      <!-- 6. HIPOTECAS -->
+      <section id="sec-6" class="rule-section sec-6">
+        <div class="section-header">
+          <span class="section-num">06</span>
+          <h2>Sistema Financiero: Hipotecas</h2>
+        </div>
+
+        <h3>6.1. Procedimiento para Hipotecar</h3>
+        <p>Permite obtener liquidez inmediata al <strong>50% del valor de compra</strong>. Requisito obligatorio: vender previamente todas las casas y hoteles del grupo de color completo.</p>
+
+        <h3>6.2. Efectos de la Hipoteca</h3>
+        <p>La propiedad hipotecada no genera cobro de alquileres. El propietario retiene su titularidad y las demás propiedades libres del mismo grupo siguen cobrando normalmente.</p>
+
+        <h3>6.3. Deshipotecar (Levantar la Hipoteca)</h3>
+        <p>Para reactivarla, se abona al Banco el importe de la hipoteca más un <strong>10% de recargo por interés</strong>.</p>
+      </section>
+
+      <!-- 7. LA CÁRCEL -->
+      <section id="sec-7" class="rule-section sec-7">
+        <div class="section-header">
+          <span class="section-num">07</span>
+          <h2>La Cárcel</h2>
+        </div>
+
+        <h3>7.1. Motivos de Encarcelamiento</h3>
+        <ol>
+          <li>Caer exactamente en la casilla "Ir a la Cárcel".</li>
+          <li>Sacar una carta de Suerte o Generosidad que ordene prisión.</li>
+          <li>Sacar dobles 3 veces consecutivas en un mismo turno.</li>
+        </ol>
+
+        <h3>7.2. "Solo Visitas" vs. "Preso"</h3>
+        <p>Llegar por tirada habitual sitúa al peón en el perímetro ("Solo Visitas"), sin penalización alguna. Si entra como Preso, va dentro de las rejas.</p>
+
+        <h3>7.3. Derechos en Prisión</h3>
+        <p>Estar en prisión no paraliza los negocios: se pueden seguir cobrando alquileres, comerciar propiedades, edificar o demoler y participar en subastas.</p>
+
+        <h3>7.4. Métodos de Liberación</h3>
+        <ul>
+          <li><strong>Pagar fianza:</strong> Pagar $100 al Banco antes de lanzar los dados.</li>
+          <li><strong>Carta de Libertad:</strong> Entregar la carta antes de lanzar los dados.</li>
+          <li><strong>Lanzar para dobles:</strong> Tirar gratis; si salen dobles, sale y avanza esas casillas (sin turno extra).</li>
+          <li><strong>Límite del 3.er turno:</strong> Si falla por 3.ª vez consecutiva, paga obligatoriamente $50 de fianza y avanza lo marcado por los dados.</li>
+        </ul>
+      </section>
+
+      <!-- 8. COMERCIO -->
+      <section id="sec-8" class="rule-section sec-8">
+        <div class="section-header">
+          <span class="section-num">08</span>
+          <h2>Comercio y Negociaciones</h2>
+        </div>
+        <p>Propiedades sin edificar, estaciones, servicios y cartas de cárcel pueden negociarse en cualquier momento por el valor o activo pactado entre jugadores.</p>
+        <ul>
+          <li><strong>Propiedades con construcciones:</strong> No pueden venderse entre jugadores. Primero deben demolerse todas las construcciones del grupo al 50% con el Banco.</li>
+          <li><strong>Propiedades hipotecadas:</strong> Pueden venderse; el comprador decide al instante si la levanta (pago + 10%) o si paga el 10% para conservarla hipotecada.</li>
+        </ul>
+
+        <div class="alert-pill-box">
+          <strong>Acciones Terminantemente Prohibidas:</strong>
+          <ul>
+            <li>No existen préstamos de dinero entre jugadores.</li>
+            <li>No se permite condonar alquileres futuros ni pactar "inmunidades".</li>
+            <li>No se puede hipotecar una propiedad a favor de otro jugador (solo con el Banco).</li>
+            <li>No está permitido fusionar patrimonios o pagar deudas conjuntas.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 9. BANCARROTA -->
+      <section id="sec-9" class="rule-section sec-9">
+        <div class="section-header">
+          <span class="section-num">09</span>
+          <h2>Deudas, Insolvencia y Bancarrota</h2>
+        </div>
+
+        <h3>9.1. Procedimiento de Insolvencia</h3>
+        <p>Si no se cuenta con efectivo suficiente para saldar una deuda, se deben recaudar fondos obligatoriamente en este orden:</p>
+        <ol>
+          <li>Vender casas y hoteles al Banco (al 50%).</li>
+          <li>Hipotecar propiedades no edificadas al Banco (al 50%).</li>
+          <li>Vender o canjear propiedades libres o cartas a otros jugadores.</li>
+        </ol>
+
+        <h3>9.2. Declaración de Bancarrota</h3>
+        <p>Si tras agotar todas las alternativas no se alcanza a saldar la deuda, el jugador queda eliminado:</p>
+        
+        <div class="highlight-pill-box">
+          <strong>Caso A: Frente a otro Jugador</strong>
+          <p>El acreedor recibe todo el efectivo remanente, cartas de libertad y títulos. Por cada título hipotecado, el receptor elige de inmediato si levanta la hipoteca o paga solo el 10% para conservarla así.</p>
+        </div>
+
+        <div class="highlight-pill-box">
+          <strong>Caso B: Frente al Banco (Impuestos o Cartas)</strong>
+          <p>El efectivo vuelve a la tesorería, las construcciones se devuelven y todos sus títulos se deshipotecan automáticamente.</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>
